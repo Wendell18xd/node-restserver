@@ -22,7 +22,7 @@ const usuariosGet = async (req = request, res = response) => {
 
 const usuariosPut = async (req = request, res = response) => {
   const { id } = req.params;
-  const { _id, password, google, correo, ...resto } = req.body;
+  const { _id, password, google, correo, estado, ...resto } = req.body;
 
   //TODO validar contra base de datos
   if (password) {
